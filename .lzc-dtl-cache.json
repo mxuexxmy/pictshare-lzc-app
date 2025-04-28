@@ -1,0 +1,30 @@
+{
+  "name": "PictShare",
+  "package": "xyz.mxue.pictshare",
+  "description": "PictShare 是一种多语言、开源图像托管服务，具有简单的大小调整和上传 API。",
+  "homepage": "https://github.com/HaschekSolutions/pictshare",
+  "author": "HaschekSolutions",
+  "app_features": [],
+  "subdomain": "pictshare",
+  "version": "0.0.1",
+  "iconPath": "logo.png",
+  "composePath": "docker-compose.yml",
+  "unsupported_platforms": [],
+  "lastRouteType": "from_compose",
+  "port_mappings": {
+    "pictshare_80_80": {
+      "use": true,
+      "type": "http",
+      "path": "/",
+      "targetPath": "/"
+    }
+  },
+  "image_hascheksolutions_pictshare_2": {
+    "originalImage": "hascheksolutions/pictshare:2",
+    "pushTarget": "lazycat",
+    "newImageName": "registry.lazycat.cloud/mxuexxmy/hascheksolutions/pictshare:dcaa20072e9dbfa9",
+    "timestamp": "2025-04-28T15:44:54.740Z"
+  },
+  "pictshare_volume_/var/www/data_action": "emptyDir",
+  "pictshare_volume_/var/www/data_location": "app_data"
+}

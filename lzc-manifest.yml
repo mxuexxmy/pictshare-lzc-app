@@ -1,0 +1,23 @@
+lzc-sdk-version: "0.1"
+name: PictShare
+package: xyz.mxue.pictshare
+version: 0.0.1
+description: PictShare 是一种多语言、开源图像托管服务，具有简单的大小调整和上传 API。
+homepage: https://github.com/HaschekSolutions/pictshare
+author: HaschekSolutions
+application:
+  subdomain: pictshare
+  background_task: false
+  multi_instance: false
+  gpu_accel: false
+  kvm_accel: false
+  usb_accel: false
+  routes:
+    - /=http://pictshare.xyz.mxue.pictshare.lzcapp:80/
+services:
+  pictshare:
+    image: registry.lazycat.cloud/mxuexxmy/hascheksolutions/pictshare:dcaa20072e9dbfa9
+    environment:
+      - URL=https://pictshare.${LAZYCAT_BOX_DOMAIN}/
+    binds:
+      - /lzcapp/var/data:/var/www/data
