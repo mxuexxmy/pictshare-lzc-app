@@ -16,7 +16,7 @@ application:
     - /=http://pictshare.xyz.mxue.pictshare.lzcapp:80/
 services:
   pictshare:
-    image: registry.lazycat.cloud/mxuexxmy/hascheksolutions/pictshare:dcaa20072e9dbfa9
+    image: registry.lazycat.cloud/mxuexxmy/xxmymxue/pictshare:a56d5c3712dd6d2c
     environment:
       - URL=https://pictshare.${LAZYCAT_BOX_DOMAIN}/
     binds:

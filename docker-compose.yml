@@ -1,8 +1,8 @@
 services:
   pictshare:
-    image: hascheksolutions/pictshare:2
+    image: xxmymxue/pictshare:0.0.1
     container_name: pictshare
     ports:
-      - "80:80"
+      - "9080:80"
     volumes:
-      - /data/pictshareuploads:/var/www/data
+      - ./data/pictshareuploads:/var/www/data
